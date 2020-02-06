@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+  padding: 0 2%;
+  color: #2e3e50;
+  background: #d8dddd;
+}
+.X{
+  margin: auto;
+  padding: 1% 2%;
+  max-width: 420px;
+  border-radius: 5px;
+  background: #ecf0f1;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0, .3);
+}
+h1,h2{
+  text-align: center;
+  font-family: 'Baloo Tamma', cursive;
+}
+input,label,a{
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: 'Raleway', serif;
+}
+label,input[type=submit],a{font-weight: 500;}
+
+/*Style Social
+lsN = login social Network
+*/
+
+ul{padding: 0;}
+.lsn li{margin: 15px 0;list-style: none;}
+.lsn a{
+  padding: 4%;
+  color: #fff;
+  display: block;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.lsn span{
+  margin: 0 8px 0 0;
+  padding: 5.4% 15px 6% 0;
+  border-right: 2px solid rgba(0,0,0, .2);
+}
+.lsn span i{width: 15px;}
+#fb{
+  background: rgba(59, 89, 152, 1);
+  box-shadow: 0 5px 0 0 rgba(59, 89, 152, .4);
+}
+#gl{
+  background: rgba(221, 75, 57, 1);
+  box-shadow: 0 5px 0 0 rgba(221, 75, 57, .4);
+}
+.pss{
+  width: 100%;
+  display: inline-block;
+}
+.pss a{
+  float: right;
+  font-size: 14px;
+  color:#0080FF;;
+  text-decoration: none;
+}
+/*style form*/
+form{
+  width: 100%;
+  margin-top: 40px;
+}
+ input{
+   width: 100%;
+   border: none;
+   outline: none;
+   padding: 10px;
+   margin: 8px auto;
+   box-sizing: border-box;
+   box-shadow: 0 2px 4px rgba(0,0,0, .2);
+}
+label{display: flex;}
+input:hover{box-shadow: 0 4px 6px rgba(0,0,0, .3);}
+input:focus{border: 1px solid #808b96;}
+input[type=submit]{
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  background: #17aa1c;
+}
+input[type=submit]:focus{border: none;}
+
+/*Checkbox style*/
+input[type=checkbox]{display: none;}
+input[type=checkbox] + label {
+  position: relative;
+  padding-left: 28px;
+}
+input[type=checkbox] + label:before{
+  content: "";
+  position: absolute;
+  transition: all 0.6s ease-in-out;
+}
+input[type=checkbox] + label:before {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #17aa1c;
+}
+input[type=checkbox]:checked + label:before {
+  color: #fff;
+  display: flex;
+  content: '\f00c';
+  align-items: center;
+  background: #17aa1c;
+  justify-content: center;
+  font-family: 'FontAwesome';
+}
+/*Responsive*/
+@media (max-width: 350px){
+  input,label,a{font-size: 90%;}
+}
+    </style>
+</head>
+<body>
+    <div class="X">
+        <h1>LOGIN</h1>  
+        
+         <form class="s4" action="//goo.gl/FJmwrg">
+          <ul class="lsn"> 
+            <li><a href="#" id="gl"><span><i class="fa fa-google"></i></span> Login with google</a></li>
+            <li><a href="#" id="fb"><span><i class="fa fa-facebook"></i></span> Login with facebook</a></li>
+          </ul>
+          <label for="r2"> Email:</label>
+          <input id="r2" type="email" />
+          <label for="s3" class="pss"> Password: <a href="#">Forgot?</a></label>
+          <input id="s3" minlength="8" type="password" />
+          <input id="t4" type="checkbox" onchange="ohh()" checked />
+          <label for="t4" id="vr"> Remenber me</label>
+           <input type="submit"  />
+         </form>   
+        </div>
+
+        <script>
+            //  For required
+            var x = document.getElementsByTagName('input');
+            for(var i = 0; i < 2; i++){
+            x[i].required = true;}
+
+
+        </script>
+</body>
+</html>

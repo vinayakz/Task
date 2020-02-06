@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="./main.css">
+        <title>3D Swiper</title>
+    </head>
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                    <img src="img1.JPG">
+                  </div>
+                  <div class="content">
+                    <h2>Vinayak Z. <br><span> Web Developer</span></h2>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="img2.JPG">
+                </div>
+                <div class="content">
+                  <h2>Vinayak <br><span> Web Developer</span></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="img1.JPG">
+                </div>
+                <div class="content">
+                  <h2>Vinayak <br> <span> Web Developer</span></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="img1.JPG">
+                </div>
+                <div class="content">
+                  <h2>Vinayak <br><span> Web Developer</span></h2>
+                </div>
+            </div>
+            </div>
+          </div>
+          <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+          <script>
+            var swiper = new Swiper('.swiper-container', {
+                    effect: 'cube',
+                    grabCursor: true,
+                    cubeEffect: {
+                        shadow: true,
+                        slideShadows: true,
+                        shadowOffset: 20,
+                        shadowScale: 0.94,
+                    },
+                        pagination: {
+                            el: '.swiper-pagination',
+                    },
+            });
+          </script>
+    </body>
+</html>
